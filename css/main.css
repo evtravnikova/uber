@@ -305,6 +305,7 @@ header a {
   height: 87px;
   background-color: rgba(0, 0, 0, .6);
   position: absolute;
+  top:50px;
   width: 100%;
 
 }
@@ -403,4 +404,36 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   margin-top: 20px;
+}
+
+.reasons_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.reasons_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 113px;
+  min-height: 113px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+
+.reasons_round img {
+  width: 70px;
+  height: 70px;
+}
+
+.reason_subtitle {
+  font-weight: 400;
+  font-size: 17px;
+  color: #1EACC7;
+}
+
+.reasons_desc {
+  padding-left: 35px;
 }
