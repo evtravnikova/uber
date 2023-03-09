@@ -223,6 +223,7 @@ h1 {
   display: block;
   margin: 70px auto;
   background-color: #289fb7;
+  transition: 0.8s all;
 }
 .promo_btn:hover {
   background-color: #0b677a;
@@ -405,6 +406,10 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+.red {
+  color: #FF5656;
 }
 
 .requirement_item {
