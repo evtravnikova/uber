@@ -234,13 +234,14 @@ h1 {
 }
 
 .label {
-  max-width: 115px;
+  max-width: 125px;
   text-align: center;
   font-size: 14px;
   color: white;
   background-color: black;
   padding: 7px;
   margin: 25px auto;
+  text-transform: uppercase;
 }
 
 .title {
@@ -341,11 +342,12 @@ h1 {
 }
 
 .top_wrapper {
-  min-height: 500px;
+  height: 500px;
   background-color: #070716;
 }
 
 .bottom_wrapper {
+  position: relative;
   min-height: 400px;
   background: url("../img/mobile_bg.png") center center/cover no-repeat;
 }
@@ -362,6 +364,7 @@ h1 {
   background-color: white;
   padding: 7px;
   margin: 25px auto;
+  text-transform: uppercase;
 }
 
 #possibilities {
@@ -369,11 +372,73 @@ h1 {
 }
 
 .car_img {
-  transform: translate(35%, -53%);
+  position: absolute;
+  left: 34%;
+  bottom: 48%;
 }
 
 #subtitle_transform {
-  margin-top: -260px;
+  padding-top: 200px;
+}
+
+.conditions {
+  min-height: 600px;
+  margin-top: 25px;
+}
+
+.conditions_lists {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.conditions_lists_items {
+  display: flex;
+}
+
+#requirements_row {
+  margin-top: 50px;
+}
+
+.requirements_title {
+  color: #289fb7;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.requirement_item {
+  display: flex;
+  padding-top: 8px;
+}
+.requirement_item img {
+  padding-right: 10px;
+  width: 30px;
+  height: 19px;
+}
+.requirement_item .conditions_text {
+  line-height: 17px;
+}
+
+.world {
+  height: 716px;
+  padding-top: 25px;
+  background: url("../img/world_bg.png") center center/cover no-repeat;
+}
+.world_description {
+  color: white;
+  text-align: center;
+}
+
+.link_cities {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 450px;
+}
+.link_cities a {
+  color: #289fb7;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
