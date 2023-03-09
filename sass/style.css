@@ -234,13 +234,13 @@ h1 {
 }
 
 .label {
-  max-width: 100px;
+  max-width: 115px;
   text-align: center;
   font-size: 14px;
   color: white;
   background-color: black;
   padding: 7px;
-  margin: 20px auto;
+  margin: 25px auto;
 }
 
 .title {
@@ -338,6 +338,42 @@ h1 {
 }
 .mobile_item_plus:hover {
   transform: scale(1.2) translate(0, -10px);
+}
+
+.top_wrapper {
+  min-height: 500px;
+  background-color: #070716;
+}
+
+.bottom_wrapper {
+  min-height: 400px;
+  background: url("../img/mobile_bg.png") center center/cover no-repeat;
+}
+
+.invert {
+  color: white;
+}
+
+.label_invert {
+  max-width: 115px;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  background-color: white;
+  padding: 7px;
+  margin: 25px auto;
+}
+
+#possibilities {
+  padding-top: 25px;
+}
+
+.car_img {
+  transform: translate(35%, -53%);
+}
+
+#subtitle_transform {
+  margin-top: -260px;
 }
 
 /*# sourceMappingURL=style.css.map */
