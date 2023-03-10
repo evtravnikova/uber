@@ -468,4 +468,78 @@ h1 {
   text-decoration: none;
 }
 
+footer {
+  height: 140px;
+  background-color: #fff;
+}
+
+.container_divider {
+  position: relative;
+}
+
+.blue_line {
+  position: absolute;
+  background-color: #289fb7;
+  width: 340px;
+  height: 7px;
+  right: 45%;
+  bottom: 172px;
+}
+
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.footer_social {
+  display: flex;
+  justify-content: center;
+  filter: grayscale(100%) contrast(220%);
+}
+.footer_social_item {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.footer_links_main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.footer_links_main a {
+  font-weight: 300;
+  font-size: 15px;
+  color: #070716;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer_links_sub {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_links_sub a {
+  font-weight: 300;
+  color: #999999;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 20px 20px;
+}
+
+.footer_links_lang {
+  color: #289fb7;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_mobile a img {
+  width: 100px;
+  padding-right: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
