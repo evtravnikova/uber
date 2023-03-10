@@ -238,11 +238,11 @@ h1 {
   max-width: 125px;
   text-align: center;
   font-size: 14px;
-  color: white;
-  background-color: black;
   padding: 7px;
   margin: 25px auto;
   text-transform: uppercase;
+  color: white;
+  background-color: black;
 }
 
 .title {
@@ -304,6 +304,7 @@ h1 {
   width: 320px;
   height: 280px;
   margin: 92px auto 19px auto;
+  position: relative;
 }
 .mobile_item_1 {
   background: url("../img/cards/1.png") center center/cover no-repeat;
@@ -336,10 +337,31 @@ h1 {
   margin: 0 auto;
   padding-top: 100px;
   cursor: pointer;
-  transition: all 0.8s ease;
 }
-.mobile_item_plus:hover {
-  transform: scale(1.2) translate(0, -10px);
+.mobile_item_plus:before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #289fb7;
+  transition: 0.4s all;
+  top: 238px;
+  left: 153px;
+  width: 15px;
+  height: 3px;
+}
+.mobile_item_plus:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #289fb7;
+  transition: 0.4s all;
+  left: 159px;
+  bottom: 33px;
+  width: 3px;
+  height: 15px;
+}
+.mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+  transform: scale(1.3);
 }
 
 .top_wrapper {
@@ -358,14 +380,14 @@ h1 {
 }
 
 .label_invert {
-  max-width: 115px;
+  max-width: 125px;
   text-align: center;
   font-size: 14px;
-  color: black;
-  background-color: white;
   padding: 7px;
   margin: 25px auto;
   text-transform: uppercase;
+  background-color: white;
+  padding: 7px;
 }
 
 #possibilities {
