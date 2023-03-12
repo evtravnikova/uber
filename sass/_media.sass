@@ -10,6 +10,10 @@
         margin-bottom: 10px
     .mobile_item
         width: 310px
+    .car_img
+        position: absolute
+        left: 17%
+        bottom: 48%
     .blue_line
         display: none
     .footer_wrapper
@@ -30,12 +34,64 @@
 @media (max-width: 991px)
     .menu
          padding: 13px 20px
+    .logo
+        max-height: 40px
+        padding-top: 14px
+    .subheader_phone
+        font-size: 18px
     .promo_btn
         margin: 20px auto
     .title
         font-size: 32px
     .mobile_item
         margin-top: -5px
+    .bottom_wrapper
+        background: url("../img/mobile_bg_mini.png") center center/cover no-repeat
+    .car_img
+        position: absolute
+        left: 1%
+        bottom: 48%
+    .footer_wrapper
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+    .blue_line
+        display: none
+    .footer_social
+        width: 100vw
+        padding-left: 0
+    .footer_links
+        width: 90vw
+    .footer_mobile
+        width: 100vw
+        text-align: center
+        padding-top: 20px
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        top: 0
+        left: -100%
+        width: 40%
+        height: 100vh
+        padding: 10px 15px
+        flex-direction: column
+        justify-content: center
+        align-items: start
+        background-color: rgba(0,0,0, .8)
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            font-size: 200px
+        li
+            padding-top: 20px
+
+
+
+
     .footer_wrapper
         display: flex
         justify-content: space-between
