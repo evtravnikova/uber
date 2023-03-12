@@ -1,0 +1,366 @@
+@import "mixins"
+@import "variables"
+@import "media"
+header
+    nav
+        position: fixed
+        width: 100vw
+        height: 50px
+        background-color: #212121
+        z-index: 5
+.menu
+    display: flex
+    justify-content: space-between
+    padding: 13px 70px
+    margin: 0
+    list-style-type: none
+    .menu_item
+        color: white
+        font-size: 15px
+        font-weight: 300
+        text-decoration: none
+        &:hover
+            color: $blue
+.logo
+    max-height: 50px
+    padding-top: 16px
+    filter: invert(0.9)
+
+.subheader
+    height: 87px
+    background-color: rgba(0, 0, 0, .6)
+    position: absolute
+    top: 50px
+    width: 100%
+
+.subheader_official
+    padding-top: 10px
+    font-weight: 100
+    font-size: 14px
+    color: $whitish
+
+.subheader_call
+    padding-top: 16px
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    color: $whitish
+
+.subheader_phone
+    font-style: normal
+    font-weight: 400
+    font-size: 22px
+    color: white
+
+.call_button
+    padding-top: 22px
+
+.promo
+    min-height: 700px
+    width: auto
+    background: url("../img/bg.png") center center/cover no-repeat
+
+    h2
+        color: $whitish
+        text-align: center
+        font-style: normal
+        font-weight: 700
+        font-size: 36px
+        margin-top: 35px
+        line-height: 20px
+
+h1
+    color: #ffffff
+    text-align: center
+    font-weight: 900
+    font-size: 60px
+    line-height: 24px
+    margin-top: 215px
+
+.promo_descr
+    padding-top: 30px
+    line-height: 28px
+    color: $whitish
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+
+.promo_btn
+    display: block
+    margin: 70px auto
+    background-color: $blue
+    transition: 0.8s all
+
+    &:hover
+        background-color: #0b677a
+        color: $whitish
+
+.reasons
+    min-height: 800px
+
+.label
+    @include labels
+    color: white
+    background-color: black
+
+.title
+    font-style: normal
+    font-weight: 700
+    font-size: 38px
+    text-transform: uppercase
+    text-align: center
+    margin-top: 20px
+
+.subtitle
+    font-size: 17px
+    text-align: center
+    color: $black
+    margin-top: 19px
+
+.reasons_block
+    display: flex
+    justify-content: start
+    align-items: start
+    margin-top: 30px
+
+.reasons_round
+    display: flex
+    justify-content: center
+    align-items: center
+    min-width: 113px
+    min-height: 113px
+    background-color: $blue
+    border-radius: 100%
+
+    img
+        width: 70px
+        height: 70px
+
+.reason_subtitle
+    font-weight: 400
+    font-size: 17px
+    color: $blue
+
+.reasons_desc
+    padding-left: 35px
+
+.mobile
+    min-height: 864px
+    padding: 28px 0 79px 0
+    background: url("../img/mobile_bg.png") center center/cover no-repeat
+
+    .row
+        margin-top: 32px
+
+    &_item
+        width: 320px
+        height: 280px
+        margin: 92px auto 19px auto
+        position: relative
+
+        &_1
+            background: url("../img/cards/1.png") center center/cover no-repeat
+
+        &_2
+            background: url("../img/cards/2.png") center center/cover no-repeat
+
+        &_3
+            background: url("../img/cards/3.png") center center/cover no-repeat
+
+        &_4
+            background: url("../img/cards/4.png") center center/cover no-repeat
+
+        &_5
+            background: url("../img/cards/5.png") center center/cover no-repeat
+
+        &_6
+            background: url("../img/cards/6.png") center center/cover no-repeat
+
+        &_subtitle
+            font-size: 24px
+            text-align: center
+            padding-top: 89px
+            color: #ffffff
+            text-transform: uppercase
+
+        &_plus
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            bottom: 35px
+            left: 50%
+            transform: translateX(-50%)
+            width: 26px
+            height: 26px
+            background: #000000
+            margin: 0 auto
+            border-radius: 100%
+            cursor: pointer
+            &:before
+                content: ""
+                display: block
+                width: 14px
+                height: 2px
+                background-color: $blue
+                transition: 0.3s all
+            &:after
+                content: ""
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                display: block
+                height: 14px
+                width: 2px
+                background-color: $blue
+                transition: 0.3s all
+            &:hover
+                &:before, &:after
+                    transform: scale(1.3)
+
+.top_wrapper
+    height: 500px
+    background-color: #070716
+
+.bottom_wrapper
+    position: relative
+    min-height: 400px
+    background: url("../img/mobile_bg.png") center center/cover no-repeat
+
+.invert
+    color: white
+
+.label_invert
+    @include labels
+    background-color: white
+    padding: 7px
+
+#possibilities
+    padding-top: 25px
+
+.car_img
+    position: absolute
+    left: 34%
+    bottom: 48%
+
+#subtitle_transform
+    padding-top: 200px
+
+
+.conditions
+    min-height: 600px
+    margin-top: 25px
+
+.conditions_lists
+    margin-top: 20px
+    display: flex
+    justify-content: center
+    align-items: start
+
+    &_items
+        display: flex
+
+#requirements_row
+    margin-top: 50px
+
+.requirements_title
+    color: $blue
+    font-weight: bold
+    text-transform: uppercase
+    margin-bottom: 10px
+
+.red
+    color: #FF5656
+
+.requirement_item
+    display: flex
+    padding-top: 8px
+
+    img
+        padding-right: 10px
+        width: 30px
+        height: 19px
+
+    .conditions_text
+        line-height: 17px
+
+.world
+    height: 716px
+    padding-top: 25px
+    background: url("../img/world_bg.png") center center/cover no-repeat
+
+    &_description
+        color: white
+        text-align: center
+
+.link_cities
+    text-transform: uppercase
+    text-align: center
+    margin-top: 450px
+
+    a
+        color: $blue
+        font-size: 18px
+        text-decoration: none
+
+footer
+    height: 140px
+    background-color: #fff
+.container_divider
+    position: relative
+.blue_line
+    position: absolute
+    background-color: $blue
+    width: 340px
+    height: 7px
+    right: 43%
+    bottom: 172px
+
+.footer_wrapper
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding: 40px 20px
+
+.footer_social
+    display: flex
+    justify-content: center
+    padding-left: 120px
+    &_item
+        font-size: 30px
+        margin-right: 20px
+        color: black
+
+
+.footer_links_main
+    display: flex
+    justify-content: space-between
+    padding-top: 15px
+    a
+        font-weight: 300
+        font-size: 15px
+        color: #070716
+        text-decoration: none
+        text-transform: uppercase
+
+.footer_links_sub
+    display: flex
+    justify-content: space-between
+    a
+        font-weight: 300
+        color: #999999
+        text-transform: uppercase
+        text-decoration: none
+        margin: 20px 20px
+.footer_links_lang
+    color: $blue
+    text-decoration: none
+    text-transform: uppercase
+    font-size: 16px
+    display: flex
+    justify-content: center
+.footer_mobile
+    a
+        img
+            width: 100px
+            padding-right: 10px
