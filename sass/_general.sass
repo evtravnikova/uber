@@ -1,6 +1,7 @@
 @import "mixins"
 @import "variables"
 @import "media"
+
 header
     nav
         position: fixed
@@ -312,6 +313,7 @@ footer
     background-color: #fff
 .container_divider
     position: relative
+    width: 100%
 .blue_line
     position: absolute
     background-color: $blue
@@ -368,5 +370,8 @@ footer
         img
             width: 100px
             padding-right: 10px
+            &:first-child
+                margin-left: 25px
 .xs-visible
     display: none
+
