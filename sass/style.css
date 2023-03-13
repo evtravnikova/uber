@@ -185,9 +185,6 @@ h3 * {
   .mobile_item {
     margin-top: -5px;
   }
-  .bottom_wrapper {
-    background: url("../img/mobile_bg_mini.png") center center/cover no-repeat;
-  }
   .car_img {
     position: absolute;
     left: 1%;
@@ -215,17 +212,20 @@ h3 * {
   }
 }
 @media (max-width: 767px) {
+  nav {
+    height: 50px;
+  }
   .menu {
     position: fixed;
     top: 0;
     left: -100%;
     width: 40%;
     height: 100vh;
-    padding: 10px 15px;
+    padding: 15px 15px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.92);
     transition: 0.6s all;
   }
   .menu_active {
@@ -233,11 +233,107 @@ h3 * {
   }
   .menu_item {
     padding-right: 0;
-    border: none;
     font-size: 200px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+    cursor: pointer;
   }
   .menu li {
     padding-top: 20px;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 12px;
+  }
+  .hamburger span {
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 2px;
+    transition: 0.5s all;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  .hamburger_active span:first-child {
+    transform: rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    transform: rotate(45deg);
+  }
+  .subheader_call, .xs-hidden {
+    display: none;
+  }
+  .xs-visible {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .call_button {
+    margin-top: -20px;
+    margin-left: 100px;
+  }
+  h1 {
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-top: 240px;
+  }
+  .promo_descr {
+    display: none;
+  }
+  .promo_btn {
+    margin-top: 80px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: white;
+  }
+  .mobile_item {
+    width: 100%;
+    min-height: 400px;
+  }
+  .car_img {
+    position: relative;
+  }
+  .image_car {
+    width: 520px;
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+  }
+  .title {
+    display: none;
+  }
+  .car .title {
+    display: none;
+  }
+  .car #subtitle_transform {
+    padding-top: 10px;
+    position: relative;
+    bottom: 100px;
+    color: white;
+  }
+  .top_wrapper .subtitle {
+    display: none;
+  }
+  .bottom_wrapper {
+    background: none;
+    min-height: 1px;
+    max-height: 2px;
+  }
+  .requirement_item:last-child {
+    padding-bottom: 25px;
+  }
+  .world_description {
+    font-size: 35px;
+    text-transform: uppercase;
   }
   .footer_wrapper {
     display: flex;
@@ -266,6 +362,10 @@ header nav {
   height: 50px;
   background-color: #212121;
   z-index: 5;
+}
+
+.hamburger {
+  display: none;
 }
 
 .menu {
@@ -552,6 +652,9 @@ h1 {
   min-height: 600px;
   margin-top: 25px;
 }
+.conditions_top_item {
+  padding-top: 25px;
+}
 
 .conditions_lists {
   margin-top: 20px;
@@ -687,6 +790,10 @@ footer {
   padding-right: 10px;
 }
 
+.xs-visible {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .menu_item {
     padding-right: 20px;
@@ -752,9 +859,6 @@ footer {
   .mobile_item {
     margin-top: -5px;
   }
-  .bottom_wrapper {
-    background: url("../img/mobile_bg_mini.png") center center/cover no-repeat;
-  }
   .car_img {
     position: absolute;
     left: 1%;
@@ -782,17 +886,20 @@ footer {
   }
 }
 @media (max-width: 767px) {
+  nav {
+    height: 50px;
+  }
   .menu {
     position: fixed;
     top: 0;
     left: -100%;
     width: 40%;
     height: 100vh;
-    padding: 10px 15px;
+    padding: 15px 15px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.92);
     transition: 0.6s all;
   }
   .menu_active {
@@ -800,11 +907,107 @@ footer {
   }
   .menu_item {
     padding-right: 0;
-    border: none;
     font-size: 200px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+    cursor: pointer;
   }
   .menu li {
     padding-top: 20px;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 12px;
+  }
+  .hamburger span {
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 2px;
+    transition: 0.5s all;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  .hamburger_active span:first-child {
+    transform: rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    transform: rotate(45deg);
+  }
+  .subheader_call, .xs-hidden {
+    display: none;
+  }
+  .xs-visible {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .call_button {
+    margin-top: -20px;
+    margin-left: 100px;
+  }
+  h1 {
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-top: 240px;
+  }
+  .promo_descr {
+    display: none;
+  }
+  .promo_btn {
+    margin-top: 80px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: white;
+  }
+  .mobile_item {
+    width: 100%;
+    min-height: 400px;
+  }
+  .car_img {
+    position: relative;
+  }
+  .image_car {
+    width: 520px;
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+  }
+  .title {
+    display: none;
+  }
+  .car .title {
+    display: none;
+  }
+  .car #subtitle_transform {
+    padding-top: 10px;
+    position: relative;
+    bottom: 100px;
+    color: white;
+  }
+  .top_wrapper .subtitle {
+    display: none;
+  }
+  .bottom_wrapper {
+    background: none;
+    min-height: 1px;
+    max-height: 2px;
+  }
+  .requirement_item:last-child {
+    padding-bottom: 25px;
+  }
+  .world_description {
+    font-size: 35px;
+    text-transform: uppercase;
   }
   .footer_wrapper {
     display: flex;
